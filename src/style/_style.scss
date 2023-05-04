@@ -92,24 +92,29 @@ iframe {
   object-fit: cover;
 }
 
-.container {  
-  padding: 0 16px;
-  margin: 0 auto;
+.container {    
+  padding-left: 16px;
+  padding-right: 16px;
 
   @include sm {
-    padding: 0 24px;
+    padding-left: 24px;
+    padding-right: 24px;    
   }
 
   @include md {
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    
   }
 
   @include xl {
-    padding: 0 32px;
+    padding-left: 0 30px;
+    padding-right: 30px;
   }
 
   @include xxl {
-    padding: 0 60px;
+    padding-left: 60px;
+    padding-right: 60px;
     min-width: 2560px;
     margin: 0 auto;
   }
