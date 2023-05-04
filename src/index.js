@@ -1,5 +1,7 @@
 import './index.html';
-
+//new modules
+import 'swiper/scss';
+import 'swiper/scss/pagination';
 
 import './index.scss';
 
