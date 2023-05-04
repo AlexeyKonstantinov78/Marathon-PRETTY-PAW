@@ -5,7 +5,6 @@ await imagemin(['src/img/*.{jpg,png}'], {
   destination: 'src/img',
   plugins: [
     imageminWebp({quality: 85}),
-
   ]
 });
 
