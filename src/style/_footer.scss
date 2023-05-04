@@ -1,0 +1,61 @@
+.footer {  
+
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__logo {
+    width: 200px;
+    
+    @include lg {
+      width: 360px;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 16px;
+
+    @include lg {
+      gap: 36px;
+    }
+  }
+
+  &__social-item {
+    max-width: 36px;
+    min-height: 36px;
+    @include lg {
+      max-width: 50px;
+      min-height: 50px;
+    }
+  }
+
+  &__social-link {}
+
+  &__developers {
+
+    @include lg {
+      font-size: 20px;
+    }    
+  }
+
+  &__developer {
+    margin-bottom: 19px;
+    
+    @include lg {
+      margin-bottom: 16px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;      
+    }
+
+  }
+
+  &__copyrigt {
+    @include lg {
+      font-size: 20px;
+    }
+  }
+}
