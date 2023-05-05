@@ -1,0 +1,72 @@
+.career {
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+  &__container {}
+
+  &__content {
+    margin-bottom: 40px;
+
+    @include md {
+      display: grid;
+      grid-template-columns: 528px min-content;
+      justify-content: space-between;
+      gap: 24px 21px;
+      grid-template-areas: 
+        'title link'
+        'description .'
+      ;
+    }
+
+    @include lg {
+      margin-bottom: 50px;
+      grid-template-columns: 720px min-content;
+    }
+
+    @include xl {
+      grid-template-columns: 690px min-content;
+    }
+  }
+
+  &__title {
+    font-weight: 1000;
+    font-size: 32px;
+    line-height: 1;    
+    text-transform: uppercase;
+    color: $second;
+    margin-bottom: 24px;
+    @include md {
+      margin-bottom: 0;
+      grid-area: title;
+    }
+
+    @include lg {
+      font-size: 52px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 24px;
+
+    @include md {
+      margin-bottom: 0;
+      grid-area: description;
+    }
+
+    @include lg {
+      font-size: 20px;
+    }
+  }
+
+  &__link {
+    @include md {
+      grid-area: link;
+    }
+  }
+
+  &__slider-pagination {
+    @include md {
+      display: none;
+    }
+  }
+}
