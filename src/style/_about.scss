@@ -38,10 +38,7 @@
       font-size: 52px;      
       grid-area: title;
       margin-bottom: 0;
-    } 
-    @include xl {
-
-    }
+    }     
   }
 
   &__content {
@@ -125,10 +122,6 @@
     }
   }
 
-  &__count-desc {
-
-  }
-
   &__picture {
     @include lg {
       grid-area: slider;
@@ -137,19 +130,20 @@
 
   &__image {
     border-radius: 16px;
-  }
-
-  &__slider {
-
-  }
-
-  &__image-list {}
-
-  &__image-item {}
-
-  &__image-wrapper {}
-
-  &__slider-pagination {}
+  }  
 }
 
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 16px;
+  background-color: $second; 
+  opacity: 1;  
+  transition: width .3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 40px;
+  background-color: $back;
+}
 
