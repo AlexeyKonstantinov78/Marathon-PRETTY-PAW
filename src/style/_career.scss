@@ -64,6 +64,37 @@
     }
   }
 
+  &__image {
+    border-radius: 16px;
+  }
+
+  &__image-list {
+    align-items: center;
+  }
+
+  &__image-item { 
+
+    @include md {
+      &:nth-child(even)>picture{
+        margin: 0 auto;
+        display: block;
+        width: 177px;  
+      }
+    }
+
+    @include lg {
+      &:nth-child(even)>picture {        
+        width: 242px;
+      }
+    }
+
+    @include xl {
+      &:nth-child(even)>picture {
+        width: 275px;
+      }
+    }
+  }
+
   &__slider-pagination {
     @include md {
       display: none;
