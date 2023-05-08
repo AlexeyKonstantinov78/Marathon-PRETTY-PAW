@@ -73,23 +73,16 @@
   }
 
   &__image-item { 
-
-    @include md {
-      &:nth-child(even)>picture{
+    &:nth-child(even) > picture {
+      @include md {
         margin: 0 auto;
         display: block;
-        width: 177px;  
+        width: 177px;
       }
-    }
-
-    @include lg {
-      &:nth-child(even)>picture {        
+      @include lg {
         width: 242px;
       }
-    }
-
-    @include xl {
-      &:nth-child(even)>picture {
+      @include xl {
         width: 275px;
       }
     }
