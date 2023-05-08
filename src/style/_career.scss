@@ -1,8 +1,12 @@
 .career {
+  overflow-x: hidden;
   padding-top: 80px;
   padding-bottom: 30px;
 
-  &__container {}
+  @include lg {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
 
   &__content {
     margin-bottom: 40px;
@@ -11,16 +15,15 @@
       display: grid;
       grid-template-columns: 528px min-content;
       justify-content: space-between;
-      gap: 24px 21px;
-      grid-template-areas: 
+      gap: 11px 21px;
+      grid-template-areas:
         'title link'
-        'description .'
-      ;
+        'description .';
     }
 
     @include lg {
       margin-bottom: 50px;
-      grid-template-columns: 720px min-content;
+      gap: 27px 31px;
     }
 
     @include xl {
@@ -31,7 +34,7 @@
   &__title {
     font-weight: 1000;
     font-size: 32px;
-    line-height: 1;    
+    line-height: 1;
     text-transform: uppercase;
     color: $second;
     margin-bottom: 24px;
@@ -68,22 +71,32 @@
     border-radius: 16px;
   }
 
+  &__slider {
+    overflow: visible;
+  }
+
   &__image-list {
     align-items: center;
   }
 
-  &__image-item { 
-    &:nth-child(even) > picture {
-      @include md {
-        margin: 0 auto;
-        display: block;
-        width: 177px;
+  &__image-item {
+    @include md {
+      &:nth-child(odd) {
+        width: 34%;
       }
-      @include lg {
-        width: 242px;
+
+      &:nth-child(even) {
+        width: 25%;
       }
-      @include xl {
-        width: 275px;
+    }
+
+    @include xl {
+      &:nth-child(odd) {
+        width: 27%;
+      }
+
+      &:nth-child(even) {
+        width: 20%;
       }
     }
   }
