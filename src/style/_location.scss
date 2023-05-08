@@ -33,7 +33,7 @@
       padding-bottom: 94px;
     }
 
-    &:after {
+    &:not(:last-child):after {
       content: '';
       position: absolute;
       z-index: 5;
