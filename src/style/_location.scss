@@ -1,4 +1,5 @@
 .location {
+  position: relative;
   &__list {
 
     @include lg {
@@ -251,12 +252,14 @@
   }
 
   &__title {
+    position: sticky;
     font-weight: 1000;
     font-size: 20px;
     line-height: 1;
     text-transform: uppercase;
     color: $back;
     margin-bottom: 16px;
+    z-index: 10;
 
     @include lg {
       position: absolute;
@@ -274,10 +277,16 @@
   }
 
   &__description {
+    position: sticky;
     color: $second;
+    z-index: 10;
 
     @include lg {
       display: none;      
     }
   }
+
+  &__video-bg {
+    z-index: 5;
+  }  
 }

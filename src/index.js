@@ -10,15 +10,15 @@ import { slidersInit } from './modules/sliders';
 
 slidersInit('.about__slider', {
   pagination: {
-    el: '.about__slider-pagination'
-  }
+    el: '.about__slider-pagination',
+  },
 });
 
 slidersInit('.career__slider', {
   pagination: {
     el: '.career__slider-pagination',
   },
-  breakpoints: {     
+  breakpoints: {
     // when window width is >= 480px
     768: {
       slidesPerView: 'auto',
@@ -35,13 +35,20 @@ slidersInit('.career__slider', {
       slidesPerView: 'auto',
       spaceBetween: 30,
       // pagination: false,
-    }
-  }
+    },
+  },
 });
 
-const videoBG = document.querySelector('.video-bg');
+const videoBG = document.querySelectorAll('.video-bg');
 
-videoBG.innerHTML = `
-  <source src="video/video.webm" type="video/webm">
-  <source src="video/video.mp4" type="video/mp4">
-`;
+// videoBG.innerHTML = `
+//   <source src="video/video.webm" type="video/webm">
+//   <source src="video/video.mp4" type="video/mp4">
+// `;
+
+videoBG.forEach((item) => {
+  item.innerHTML = `
+    <source src="video/video.webm" type="video/webm">
+    <source src="video/video.mp4" type="video/mp4">
+  `;
+});
