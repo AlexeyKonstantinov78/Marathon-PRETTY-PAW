@@ -73,6 +73,12 @@
 
   &__slider {
     overflow: visible;
+
+    @include xxl {
+      max-width: 2560px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
   }
 
   &__image-list {
