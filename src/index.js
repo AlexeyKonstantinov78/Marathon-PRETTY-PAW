@@ -4,9 +4,12 @@ import 'swiper/scss';
 import 'swiper/scss/pagination';
 
 import './index.scss';
+import { menuControl } from './modules/menuControl';
 import { slidersInit } from './modules/sliders';
 import { videoBagraundInit } from './modules/videoBackgrauund';
 //use modules
+
+menuControl();
 
 slidersInit('.about__slider', {
   pagination: {
