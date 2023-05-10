@@ -64,9 +64,18 @@
   &__social-link {
     display: block;
     width: 36px;
+    transition: transform 0.36s;
 
     @include lg {
       width: 50px;
+    }
+
+    & > svg {
+      fill: $main;
+    }
+
+    &:hover {
+      transform: scale(1.5);
     }
   }
 
