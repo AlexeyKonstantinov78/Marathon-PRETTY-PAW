@@ -84,6 +84,6 @@ export const locationHover = () => {
       } else {
         document?.head.append(linkPreload);
       }
-    });
-
+    });    
+  }
 };
