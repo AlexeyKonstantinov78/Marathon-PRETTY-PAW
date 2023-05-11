@@ -1,0 +1,28 @@
+.page {
+
+  &__nav {
+    display: none;
+    font-weight: 1000;
+    line-height: 1;
+    color: $second;
+    
+    @include lg {
+      display: block;
+    }
+  }
+
+  &__nav-items {}
+
+  &__nav-item {
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    &_active {
+      color: $main;
+    }
+  }
+
+  &__nav-link {}
+}
