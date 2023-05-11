@@ -53,18 +53,12 @@
   }
 
   &__social-item {
-    // max-width: 36px;
-    // min-height: 36px;
-    // @include lg {
-    //   max-width: 50px;
-    //   min-height: 50px;
-    // }
   }
 
   &__social-link {
     display: block;
     width: 36px;
-    transition: transform 0.36s;
+    transition: transform .36s;
 
     @include lg {
       width: 50px;
@@ -72,10 +66,15 @@
 
     & > svg {
       fill: $main;
+      transition: fill .36s;
     }
 
     &:hover {
       transform: scale(1.5);
+
+      & > svg {
+        fill: $second;
+      }
     }
   }
 
