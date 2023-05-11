@@ -2,6 +2,11 @@
   &__container {
     margin-top: 40px;
     margin-bottom: 30px;
+
+    @include lg {
+      display: flex;   
+      justify-content: space-between;
+    }
   }
 
   &__header {
