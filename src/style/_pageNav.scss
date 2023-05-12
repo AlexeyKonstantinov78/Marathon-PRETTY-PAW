@@ -8,11 +8,13 @@
     
     @include lg {
       display: block;
-      width: 125px;
+      width: 145px;
     }
   }
 
-  &__nav-items {}
+  &__nav-items {
+    
+  }
 
   &__nav-item {
 
