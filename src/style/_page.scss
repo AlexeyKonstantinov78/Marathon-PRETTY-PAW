@@ -1,7 +1,7 @@
 .page {
   &__container {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
 
     @include lg {
       display: flex;   
@@ -15,8 +15,8 @@
 
   @include lg {
     &__container {
-      margin-top: 100px;
-      margin-bottom: 60px;
+      padding-top: 100px;
+      padding-bottom: 60px;
     }
   }
   
