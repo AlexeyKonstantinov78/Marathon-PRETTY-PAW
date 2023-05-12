@@ -30,29 +30,38 @@ careerImageItems.forEach((item, i) => {
 slidersInit('.career__slider', {
   pagination: {
     el: '.career__slider-pagination',
+    enable: true,
   },
   breakpoints: {
     // when window width is >= 480px
     576: {
       slidesPerView: 'auto',
       spaceBetween: 20,
-      //pagination: false,
+      pagination: {
+        enabled: false,
+      },
     },
     // when window width is >= 640px
     1024: {
       slidesPerView: 'auto',
       spaceBetween: 26,
-      //pagination: false,
+      pagination: {
+        enabled: false,
+      },
     },
     1240: {
       slidesPerView: 'auto',
       spaceBetween: 30,
-      // pagination: false,
+      pagination: {
+        enabled: false,
+      },
     },
     1600: {
       slidesPerView: 'auto',
       spaceBetween: 40,
-      // pagination: false,
+      pagination: {
+        enabled: false,
+      },
     },
   },
 });

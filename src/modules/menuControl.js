@@ -25,12 +25,13 @@ export const menuControl = () => {
   };
 
   const closeMenu = () => {    
+    navigationButton.classList.remove('navigation__button_active');    
     tl.reverse();
   };
 
-  tl.eventCallback('onReverseComplete', () => { 
-    navigationButton.classList.remove('navigation__button_active');    
-  });
+  // tl.eventCallback('onReverseComplete', () => { 
+  //   navigationButton.classList.remove('navigation__button_active');    
+  // });
 
   navigationButton.addEventListener('click', () => {
 
@@ -54,6 +55,10 @@ export const menuControl = () => {
         const x = i % 2 ? 500 : -500;
         gsap.set(elem, { opacity: 0, x: x, duration: 1 });
       });
+
+      if (navigationButton.classList.contains('navigation__button_active')) {
+        tl.restart();
+      }
     }
   };
 
