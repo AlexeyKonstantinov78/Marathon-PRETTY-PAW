@@ -58,12 +58,19 @@
   &__social-link {
     display: block;
     width: 36px;
-    transition: transform .36s, color .36s;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-radius: 3px;
     color: $main;
+    transition: transform .36s, color .36s;    
 
     @include lg {
       width: 50px;
     }    
+
+    &:focus:not(:hover) {
+      outline-color: $second;
+    }
 
     &:hover {
       transform: scale(1.5);
@@ -93,6 +100,22 @@
 
     &:last-child {
       margin-bottom: 0;      
+    }
+
+    &-link {
+      color: $main;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      border-radius: 3px;
+      transition: color 0.3s ease;
+
+      &:focus:not(:hover) {
+        outline-color: $second;
+      }
+
+      &:hover {
+        color: $second;
+      }
     }
 
   }
