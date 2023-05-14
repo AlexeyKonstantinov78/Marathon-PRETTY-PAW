@@ -58,23 +58,16 @@
   &__social-link {
     display: block;
     width: 36px;
-    transition: transform .36s;
+    transition: transform .36s, color .36s;
+    color: $main;
 
     @include lg {
       width: 50px;
-    }
-
-    & > svg {
-      fill: $main;
-      transition: fill .36s;
-    }
+    }    
 
     &:hover {
       transform: scale(1.5);
-
-      & > svg {
-        fill: $second;
-      }
+      color: $second;
     }
   }
 
