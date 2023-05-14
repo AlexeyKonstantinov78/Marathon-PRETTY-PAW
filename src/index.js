@@ -9,11 +9,13 @@ import { menuControl } from './modules/menuControl';
 import { slidersInit } from './modules/sliders';
 import { videoBagraundInit } from './modules/videoBackgrauund';
 import { locationHover } from './modules/locationHover';
+import { initScrollTopButton } from './modules/scrollTopButton'; 
 //use modules
 
 menuControl();
 videoBagraundInit();
 locationHover();
+initScrollTopButton();
 
 slidersInit('.about__slider', {
   pagination: {
