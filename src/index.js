@@ -3,8 +3,8 @@ import './page.html';
 //new modules
 import 'swiper/scss';
 import 'swiper/scss/pagination';
-
 import './index.scss';
+
 import { menuControl } from './modules/menuControl';
 import { slidersInit } from './modules/sliders';
 import { videoBagraundInit } from './modules/videoBackgrauund';

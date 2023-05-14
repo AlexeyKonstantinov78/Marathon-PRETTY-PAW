@@ -29,10 +29,6 @@ export const menuControl = () => {
     tl.reverse();
   };
 
-  // tl.eventCallback('onReverseComplete', () => { 
-  //   navigationButton.classList.remove('navigation__button_active');    
-  // });
-
   navigationButton.addEventListener('click', () => {
 
     if (navigationButton.classList.contains('navigation__button_active')) {
@@ -66,4 +62,11 @@ export const menuControl = () => {
 
   mediaQuery.addEventListener('change', checkScreenSize);
   checkScreenSize(mediaQuery);
+
+
+  navigationList.addEventListener('click', ({ target }) => {
+    if (target.closest('.navigation__item') && !mediaQuery) {
+      closeMenu();
+    }
+  });
 };
