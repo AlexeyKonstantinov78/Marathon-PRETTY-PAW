@@ -10,12 +10,14 @@ import { slidersInit } from './modules/sliders';
 import { videoBagraundInit } from './modules/videoBackgrauund';
 import { locationHover } from './modules/locationHover';
 import { initScrollTopButton } from './modules/scrollTopButton'; 
+import { pageControlInit } from './modules/pageControl';
 //use modules
 
 menuControl();
 videoBagraundInit();
 locationHover();
 initScrollTopButton();
+pageControlInit();
 
 slidersInit('.about__slider', {
   pagination: {

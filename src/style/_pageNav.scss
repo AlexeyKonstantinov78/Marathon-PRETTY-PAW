@@ -20,12 +20,12 @@
 
     &:not(:last-child) {
       margin-bottom: 24px;
-    }
+    }    
+  }
 
+  &__nav-link {
     &_active {
       color: $main;
     }
   }
-
-  &__nav-link {}
 }

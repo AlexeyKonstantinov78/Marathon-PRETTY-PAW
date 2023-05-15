@@ -54,7 +54,7 @@
       outline-color: $back;
     }
 
-    &_activ {
+    &_active {
       color: $back;
       pointer-events: none;
     }
@@ -70,7 +70,7 @@
       border-radius: 80px;
       outline: none;
 
-      &_activ {
+      &_active {
         color: inherit;
         pointer-events: none;
         background-color: $back;
