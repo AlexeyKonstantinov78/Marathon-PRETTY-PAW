@@ -1,3 +1,5 @@
+import { debounce } from "./debounce";
+
 const createArrow = (className) => {
   const button = document.createElement('button');
 
@@ -55,10 +57,9 @@ export const initScrollTopButton = (className = 'arrow-ap') => {
 
   const showElemScrollPosition = () => {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-
     arrow.style.display =
       scrollPosition > window.innerHeight / 2 ? 'flex' : 'none';
   };
 
-  window.addEventListener('scroll', showElemScrollPosition);
+  window.addEventListener('scroll', debounce(showElemScrollPosition, 500));
 };
