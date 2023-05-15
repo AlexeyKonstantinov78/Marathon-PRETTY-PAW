@@ -26,10 +26,10 @@ export const locationHover = () => {
         flexDirection: 'column',
         justifyContent: 'center',
         duration: 0,
-      })
+      })      
       .to(title, {
         whiteSpace: 'unset',         
-        hyphens: 'auto',
+        hyphens: 'manual',
         color: '#FFAA05',
         marginBottom: mediaQueryXl.matches ? '40px' : '24px',
         padding: 0,
