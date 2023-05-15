@@ -18,16 +18,16 @@
             <a href="/index.html" class="navigation__link">Главная</a>
           </li>
           <li class="navigation__item">
-            <a href="#about" class="navigation__link">О&nbsp;зоосаде</a>
+            <a href="page.html#about" class="navigation__link">О&nbsp;зоосаде</a>
           </li>
           <li class="navigation__item">
-            <a href="#history" class="navigation__link">История</a>
+            <a href="page.html#history" class="navigation__link">История</a>
           </li>
           <li class="navigation__item">
-            <a href="#goodDeeds" class="navigation__link">Добрые&nbsp;дела</a>
+            <a href="page.html#goodDeeds" class="navigation__link">Добрые&nbsp;дела</a>
           </li>
           <li class="navigation__item">
-            <a href="/page.html" class="navigation__link navigation__link_activ">Карьера</a>
+            <a href="page.html#career" class="navigation__link navigation__link_activ">Карьера</a>
           </li>
         </ul>
         <button class="navigation__button" aria-label="Открыть меню"></button>
@@ -39,13 +39,13 @@
     <div class="container page__container">
       <section class="page__nav">
         <ul class="page__nav-items">
-          <li class="page__nav-item"><a href="#about" class="page__nav-link">О зоопарке</a></li>
-          <li class="page__nav-item"><a href="#history" class="page__nav-link">История</a></li>
-          <li class="page__nav-item"><a href="#goodDeeds" class="page__nav-link">Добрые дела</a></li>
-          <li class="page__nav-item page__nav-item_active"><a href="/page.html" class="page__nav-link">Карьера</a></li>
+          <li class="page__nav-item"><a href="page.html#about" class="page__nav-link">О зоопарке</a></li>
+          <li class="page__nav-item"><a href="page.html#history" class="page__nav-link">История</a></li>
+          <li class="page__nav-item"><a href="page.html#goodDeeds" class="page__nav-link">Добрые дела</a></li>
+          <li class="page__nav-item page__nav-item_active"><a href="page.html#career" class="page__nav-link">Карьера</a></li>
         </ul>
       </section>
-      <section class="page__content">
+      <section class="page__content" id="career">
         <h1 class="page__title">Карьера</h1>
         <p class="page__description">Карьера в&nbsp;нашей компании может предоставить много интересных и&nbsp;перспективных возможностей для людей,
         увлеченных животными и&nbsp;желающих развиваться в&nbsp;этой области.</p>
@@ -54,24 +54,28 @@
         по&nbsp;уходу за&nbsp;животными в&nbsp;груминг-салонах. Также в&nbsp;компании есть возможности для работы в&nbsp;отделе
         маркетинга, управления персоналом и&nbsp;различных других сферах.</p>
 
-        <div class="page__picture-bg page__picture-bg_career-desc"></div>
+        <figure class="page__image-block">
+          <img src="img/career-desc.jpg" alt="песик кормят молоком" class="page__image">
+        </figure>        
 
         <p class="page__description">Компания предоставляет своим сотрудникам возможность профессионального роста и&nbsp;развития, проводя регулярные
         тренинги и&nbsp;курсы повышения квалификации. Кроме того, компания заботится о&nbsp;своих сотрудниках и&nbsp;предлагает
         им&nbsp;конкурентную заработную плату, социальные льготы, гибкий график работы и&nbsp;возможность работать удаленно.</p>
 
-        <div class="page__pictures-bg">
-          <div class="page__pictures-bg-left page__pictures-bg-left_career-left"></div>
-          <div class="page__pictures-bg-right page__pictures-bg-right_career-right"></div>
-        </div>
+        <figure class="page__image-block page__image-block_double">
+          <img src="img/career-left.jpg" alt="зал" class="page__image">
+          <img src="img/career-right.jpg" alt="зал поднятая рука" class="page__image">
+        </figure>
 
         <p class="page__description">Чтобы начать у&nbsp;нас карьеру, желательно иметь опыт работы с&nbsp;животными или образование в&nbsp;соответствующей
         области, такой как ветеринарная медицина или зоотехника. Но&nbsp;даже если у&nbsp;вас нет такого опыта или образования,
         вы&nbsp;можете получить его, работая в&nbsp;компании и&nbsp;проходя обучение на&nbsp;месте.</p>
 
-        <div class="page__picture-bg page__picture-bg_career-bottom"></div>
+        <figure class="page__image-block">
+          <img src="img/career-bottom.jpg" alt="улыбающаяся девушка" class="page__image">
+        </figure>
         
-        <a href="#vacancy" class="page__link link-main">Вакансии</a>
+        <a href="page.html#vacancy" class="page__link link-main">Вакансии</a>
       </section>
     </div>
   </main>
