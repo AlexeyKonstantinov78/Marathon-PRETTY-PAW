@@ -34,7 +34,7 @@ careerImageItems.forEach((item, i) => {
 slidersInit('.career__slider', {
   pagination: {
     el: '.career__slider-pagination',
-    enable: true,
+    enabled: true,
   },
   breakpoints: {
     // when window width is >= 480px
